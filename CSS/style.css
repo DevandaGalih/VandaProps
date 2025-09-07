@@ -1,7 +1,7 @@
 :root {
-  --primary: #0f4dbe;
-  --secondary: #f11b1b;
-  --third: rgb(0, 19, 82);
+  --primary: #1e46cc;
+  --secondary: #c51818;
+  --third: #001352;
 }
 
 * {
@@ -15,9 +15,9 @@
 
 body {
   font-family: "Poppins", "sans-serif";
-  background-color: #f7f7f7;
+  background-color: #10175a;
   color: rgb(0, 0, 0);
-  min-height: 1000vh;
+  height: 1000vh;
 }
 
 /* Navbar */
@@ -27,7 +27,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: rgb(15, 77, 190);
+  background-color: #1e46cc;
+  border-bottom: 1px solid rgb(0, 19, 82);
   position: fixed;
   top: 0;
   left: 0;
@@ -103,20 +104,6 @@ body {
   position: relative;
 }
 
-.hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  bottom: 0;
-  background: linear-gradient(
-    0deg,
-    rgb(248, 248, 248) 10%,
-    rgba(0, 0, 0, 0) 70%
-  );
-}
-
 .hero .content {
   display: flex;
   flex-direction: column;
@@ -125,6 +112,21 @@ body {
   padding: 1rem 7%;
   max-width: 250rem;
   line-height: 6rem;
+  cursor: default;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(255, 255, 255, 0) 10%
+  );
 }
 
 .hero .content h1 {
@@ -134,12 +136,12 @@ body {
 
 .hero .content h2 {
   font-size: 5rem;
-  color: #0f4dbe;
+  color: #1e46cc;
   text-shadow: black 2px 2px 2px;
 }
 
 .hero .content h2 span {
-  color: #f11b1b;
+  color: #c51818;
 }
 
 /* Tombol Bikin sekarang */
@@ -149,15 +151,111 @@ body {
   font-weight: 600;
   color: #ffffff;
   margin-top: 25rem;
-  display: inline-block;
+  display: none;
   padding: 0rem 2rem;
-  background-color: #0f4dbe;
+  background-color: var(--primary);
   border-radius: 2rem;
   box-shadow: black 2px 2px 4px;
   transition: 0.3s linear;
 }
 
 .hero .content .cta:hover {
+  color: rgb(247, 247, 247);
+  background-color: var(--secondary);
+}
+
+/* Tentang Kami */
+
+.about {
+  padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  cursor: default;
+}
+
+.about h2 span {
+  color: #c51818;
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  margin-top: -2rem;
+}
+
+.about .row .about-img {
+  flex: 1 1 45rem;
+  padding: 1rem 1rem;
+}
+
+.about .row .content {
+  flex: 1 1 65rem;
+  padding: 0 1rem;
+  color: #ffffff;
+}
+
+.about .row .about-img img {
+  width: 100%;
+
+  transition: 0.5s;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about .row .about-img img:hover {
+  transform: scale(1.1);
+}
+
+.about .row .content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+  cursor: default;
+}
+
+.about .row .content p {
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+.about .row .content p span {
+  color: #c51818;
+}
+
+/* CTA BIKIN SEKARANG */
+.cta-bikin {
+  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003bfd34;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.cta-bikin h4 {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: default;
+}
+
+.cta-bikin a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--primary);
+  color: #ffffff;
+  box-shadow: black 2px 2px 4px;
+  transition: 0.3s linear;
+}
+
+.cta-bikin a:hover {
   color: rgb(247, 247, 247);
   background-color: var(--secondary);
 }
@@ -170,19 +268,120 @@ body {
  *
  *
  *
+ **
  *
+ *
+ *
+ *
+ **
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ **
+ *
+
 /* Lower Asus Tuf F15 Laptop */
 
-@media (max-width: 1533px) {
+@media (max-width: 1616px) {
   .hero .content {
     line-height: 4rem;
+    margin-top: 6rem;
   }
 
   .hero .content h1 {
     font-size: 2rem;
   }
-  .hero .content .cta {
-    margin-top: 1.5rem;
+
+  .about .row {
+    margin-top: -4rem;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 55rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .content {
+    flex: 1 1 5 5rem;
+    padding: 0 1rem;
+  }
+  .about .row .content h3 {
+    font-size: 1.7rem;
+  }
+
+  .about .row .content p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+/* Mini Laptop */
+
+@media (max-width: 1400px) {
+  .about .row {
+    margin-top: 1rem;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 45rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .content {
+    flex: 1 1 65rem;
+    padding: 0 1rem;
+  }
+  .about .row .content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .about .row .content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.2rem;
+  }
+
+  /* CTA BIKIN SEKARANG */
+  .cta-bikin {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003bfd34;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .cta-bikin h4 {
+    font-size: 2rem;
+    color: #ffffff;
+  }
+
+  .cta-bikin a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--primary);
+    color: #ffffff;
+    box-shadow: black 2px 2px 4px;
+    transition: 0.3s linear;
+  }
+
+  .cta-bikin a:hover {
+    color: rgb(247, 247, 247);
+    background-color: var(--secondary);
   }
 }
 
@@ -246,6 +445,53 @@ body {
     margin-top: 2rem;
     font-size: 2rem;
   }
+
+  .about {
+    padding: 12rem 7% 1.4rem;
+  }
+
+  .about h2 {
+    font-size: 5rem;
+  }
+
+  .about .row {
+    margin-top: -1rem;
+    flex-direction: column;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 25rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .content {
+    margin-top: -1rem;
+    flex: 1 1 65rem;
+    padding: 0 1rem;
+  }
+  .about .row .content h3 {
+    font-size: 2.3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 01.5rem;
+  }
+
+  /* CTA BIKIN SEKARANG */
+
+  .cta-bikin {
+    margin-top: -10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003bfd34;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
 }
 
 /* Lower Tablet */
@@ -258,13 +504,22 @@ body {
     padding: 2rem;
   }
 
+  .hero .content {
+    margin-top: 10rem;
+    line-height: 2.8rem;
+  }
+
   .hero .content h1 {
     margin-top: 2rem;
     font-size: 1.5rem;
   }
 
+  .hero .content h2 {
+    font-size: 4rem;
+  }
+
   .navbar .navbar-nav {
-    width: 30rem;
+    width: 35rem;
   }
 
   .navbar .navbar-nav.active {
@@ -274,11 +529,77 @@ body {
   .hero .content .cta {
     margin-top: 3rem;
   }
+
+  .about h2 {
+    font-size: 4rem;
+  }
+
+  .about .row {
+    margin-top: 1rem;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 45rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .about-img {
+    width: 90%;
+  }
+
+  .about .row .content {
+    margin-top: -8rem;
+    flex: 1 1 85rem;
+    padding: 0 1rem;
+  }
+  .about .row .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .about .row .content p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  /* CTA BIKIN SEKARANG */
+
+  .cta-bikin {
+    margin-top: -8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003bfd34;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .cta-bikin h4 {
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  .cta-bikin a {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--primary);
+    color: #ffffff;
+    box-shadow: black 2px 2px 3px;
+    transition: 0.3s linear;
+  }
+
+  .cta-bikin a:hover {
+    color: rgb(247, 247, 247);
+    background-color: var(--secondary);
+  }
 }
 
 /* Mobile */
 
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   html {
     font-size: 70%;
   }
@@ -297,6 +618,39 @@ body {
   .hero .content h2 {
     font-size: 4.5rem;
   }
+
+  .about h2 {
+    font-size: 4rem;
+  }
+
+  .about .row {
+    margin-top: 1rem;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 45rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .about-img {
+    width: 90%;
+  }
+
+  .about .row .content {
+    margin-top: -10rem;
+    flex: 1 1 85rem;
+    padding: 0 1rem;
+  }
+  .about .row .content h3 {
+    font-size: 2.2rem;
+  }
+
+  .about .row .content p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.9rem;
+  }
 }
 
 /* Mini Mobile */
@@ -314,6 +668,7 @@ body {
 
   .hero .content {
     margin: 0.2rem;
+    margin-top: 7rem;
   }
 
   .hero .content h1 {
@@ -323,5 +678,38 @@ body {
 
   .hero .content h2 {
     font-size: 3.5rem;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .about .row {
+    margin-top: 1rem;
+  }
+
+  .about .row .about-img {
+    flex: 1 1 45rem;
+    padding: 2rem 2rem;
+  }
+
+  .about .row .about-img {
+    width: 90%;
+  }
+
+  .about .row .content {
+    margin-top: -17rem;
+    flex: 1 1 85rem;
+    padding: 0 1rem;
+  }
+
+  .cta-bikin {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003bfd34;
+    gap: 2rem;
+    padding: 2rem 0;
   }
 }
