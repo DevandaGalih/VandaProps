@@ -1,5 +1,5 @@
 :root {
-  --primary: #1e46cc;
+  --primary: #3b62e0;
   --secondary: #c51818;
   --third: #001352;
 }
@@ -17,7 +17,6 @@ body {
   font-family: "Poppins", "sans-serif";
   background-color: #10175a;
   color: rgb(0, 0, 0);
-  height: 1000vh;
 }
 
 /* Navbar */
@@ -27,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: #1e46cc;
+  background-color: #3b62e0;
   border-bottom: 1px solid rgb(0, 19, 82);
   position: fixed;
   top: 0;
@@ -136,7 +135,7 @@ body {
 
 .hero .content h2 {
   font-size: 5rem;
-  color: #1e46cc;
+  color: #3b62e0;
   text-shadow: black 2px 2px 2px;
 }
 
@@ -175,6 +174,7 @@ body {
   font-size: 3rem;
   color: #ffffff;
   cursor: default;
+  filter: drop-shadow(black 1px 1px 1px);
 }
 
 .about h2 span {
@@ -258,6 +258,52 @@ body {
 .cta-bikin a:hover {
   color: rgb(247, 247, 247);
   background-color: var(--secondary);
+}
+
+/* GALERII */
+
+.galeri .background {
+  background-color: #3b62e0;
+}
+
+.galeri .background {
+  background-image: url("../IMAGE/background galeri.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  padding: 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.galeri h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ff0000;
+  filter: drop-shadow(black 1px 1px 1px);
+  cursor: default;
+}
+.galeri .background .background-foto {
+  display: flex;
+  align-self: center;
+  margin-top: 3rem;
+  background-color: var(--third);
+  width: 50%;
+  height: 40rem;
+}
+
+.galeri .background .background-foto .foto-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  padding: 0 7%;
+}
+
+.galeri .background .background-foto .foto-wrap img {
+  width: 70%;
 }
 
 /* Media Queries */
