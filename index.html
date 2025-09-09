@@ -9,8 +9,16 @@
     />
     <!-- My Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
-    <!-- My Style -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward"
+    />
+    <!-- My Style & JS -->
     <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- My Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,7 +61,7 @@
 
     <!-- About start -->
     <section id="about" class="about">
-      <h2>TENTANG <span> KAMI</span></h2>
+      <h2>TENTANG KAMI</h2>
 
       <div class="row">
         <div class="about-img">
@@ -96,9 +104,88 @@
     <section id="gallery" class="galeri">
       <div class="background">
         <h2>GALERI</h2>
-        <div class="background-foto">
-          <div class="foto-wrap">
-            <img src="IMAGE/rumah.png" alt="" />
+        <div class="container-foto swiper">
+          <div class="foto-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="IMAGE\rumah.png"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <h1 class="badge">RUMAH MELATI, BULAK</h1>
+                  <p>Jl. Kalilom Lor Indah Gg Melati II</p>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_outward
+                  </button>
+                </a>
+              </li>
+
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="IMAGE\COMINGSOON.png"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <h1 class="badge">COMING SOON</h1>
+                  <p>-</p>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_outward
+                  </button>
+                </a>
+              </li>
+
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="IMAGE\COMINGSOON.png"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <h1 class="badge">COMING SOON</h1>
+                  <p>-</p>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_outward
+                  </button>
+                </a>
+              </li>
+
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="IMAGE\COMINGSOON.png"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <h1 class="badge">COMING SOON</h1>
+                  <p>-</p>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_outward
+                  </button>
+                </a>
+              </li>
+
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img
+                    src="IMAGE\COMINGSOON.png"
+                    alt="Card Image"
+                    class="card-image"
+                  />
+                  <h1 class="badge">COMING SOON</h1>
+                  <p>-</p>
+                  <button class="card-button material-symbols-outlined">
+                    arrow_outward
+                  </button>
+                </a>
+              </li>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>
@@ -106,7 +193,10 @@
     <!-- Galeri end -->
     <!-- About end -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Feather Icons -->
+
     <script>
       feather.replace();
     </script>
