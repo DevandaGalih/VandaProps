@@ -18,7 +18,7 @@ document.addEventListener("click", function (e) {
 //js unntuk slide foto
 new Swiper(".foto-wrapper", {
   loop: true,
-  spaceBetween: 300,
+  spaceBetween: 30,
 
   // If we need pagination
   pagination: {
@@ -38,10 +38,10 @@ new Swiper(".foto-wrapper", {
     0: {
       slidesPerView: 1,
     },
-    700: {
+    400: {
       slidesPerView: 2,
     },
-    1300: {
+    700: {
       slidesPerView: 3,
     },
     1400: {
