@@ -1,5 +1,5 @@
 :root {
-  --primary: #3b62e0;
+  --primary: rgb(99, 99, 99);
   --secondary: #c51818;
   --third: #001352;
 }
@@ -15,7 +15,7 @@
 
 body {
   font-family: "Poppins", "sans-serif";
-  background-color: #10175a;
+  background-color: rgb(0, 0, 0);
   color: rgb(0, 0, 0);
   height: 1000vh;
 }
@@ -26,8 +26,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 7%;
-  background-color: #3b62e0;
-  border-bottom: 1px solid rgb(0, 19, 82);
+  background-color: #ffffff;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -39,33 +39,37 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   font-style: italic;
 }
 
 .navbar .navbar-logo span {
-  color: var(--secondary);
+  color: rgb(0, 0, 0);
 }
 
 /* Main Navbar */
 
 .navbar .navbar-nav a {
-  color: #ffffff;
+  color: #000000;
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 0.8rem;
 }
 
 .navbar .navbar-nav a:hover {
-  color: rgb(0, 19, 82);
+  color: var(--primary);
   transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:active {
+  color: var(--primary);
 }
 
 .navbar .navbar-nav a::after {
   content: "";
   display: block;
   padding-bottom: 0.1rem;
-  border-bottom: 0.23rem solid var(--secondary);
+  border-bottom: 0.23rem solid rgb(0, 0, 0);
   transform: scale(0);
 }
 
@@ -77,13 +81,12 @@ body {
 /* Navbar Extra */
 
 .navbar .navbar-extra a {
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 0 0.5rem;
 }
 
-.navbar .navbar-extra a:hover {
-  color: var(--secondary);
-  transition: 0.3s linear;
+.navbar .navbar-extra a:active {
+  color: var(--primary);
 }
 
 #hamburger-menu {
@@ -123,44 +126,22 @@ body {
   bottom: 0;
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 1) 1%,
-    rgba(255, 255, 255, 0) 10%
+    rgba(0, 0, 0, 0.699) 1%,
+    rgba(255, 255, 255, 0) 7%
   );
 }
 
 .hero .content h1 {
+  font-weight: 300;
   font-size: 4rem;
-  color: rgb(61, 61, 61);
+  color: black;
 }
 
 .hero .content h2 {
   font-size: 5rem;
-  color: #3b62e0;
+  font-weight: 500;
+  color: black;
   text-shadow: black 2px 2px 2px;
-}
-
-.hero .content h2 span {
-  color: #c51818;
-}
-
-/* Tombol Bikin sekarang */
-
-.hero .content .cta {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-top: 25rem;
-  display: none;
-  padding: 0rem 2rem;
-  background-color: var(--primary);
-  border-radius: 2rem;
-  box-shadow: black 2px 2px 4px;
-  transition: 0.3s linear;
-}
-
-.hero .content .cta:hover {
-  color: rgb(247, 247, 247);
-  background-color: var(--secondary);
 }
 
 /* Tentang Kami */
@@ -220,7 +201,7 @@ body {
 }
 
 .about .row .content p span {
-  color: #c51818;
+  color: var(--primary);
 }
 
 /* CTA BIKIN SEKARANG */
@@ -229,7 +210,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #003bfd34;
+  background-color: var(--primary);
   gap: 2rem;
   padding: 3rem 0;
 }
@@ -245,7 +226,7 @@ body {
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  background-color: var(--primary);
+  background-color: black;
   color: #ffffff;
   box-shadow: black 2px 2px 4px;
   transition: 0.3s linear;
@@ -253,17 +234,13 @@ body {
 
 .cta-bikin a:hover {
   color: rgb(247, 247, 247);
-  background-color: var(--secondary);
+  background-color: rgba(0, 0, 0, 0.425);
 }
 
 /* GALERII */
 
 .galeri .background {
-  background-color: #3b62e0;
-}
-
-.galeri .background {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -272,12 +249,27 @@ body {
   padding: 8rem 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.galeri .background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(
+    0180deg,
+    rgba(0, 0, 0, 0.699) 1%,
+    rgba(0, 0, 0, 0) 7%
+  );
 }
 
 .galeri h2 {
   text-align: center;
   font-size: 5rem;
-  color: #0d1e7c;
+  color: #000000;
   filter: drop-shadow(black 1px 1px 1px);
   cursor: default;
 }
@@ -304,7 +296,11 @@ body {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #0d1e7c;
+  border-color: #000000;
+}
+
+.card-list .card-item .card-link:active {
+  border-color: #000000;
 }
 
 .card-list .card-item {
@@ -320,27 +316,27 @@ body {
 }
 
 .card-list .card-link .badge {
-  color: #0d1e7c;
+  color: #000000;
   margin-top: 1rem;
 }
 
 .card-list .card-link p {
-  color: #0d1e7c;
+  color: #000000;
 }
 
 .card-list .card-link .card-button {
   margin-top: 0.5rem;
   height: 2rem;
   width: 2rem;
-  color: #0d1e7c;
+  color: #000000;
   border-radius: 50%;
   background: none;
-  border: 2px solid #0d1e7c;
+  border: 2px solid #000000;
   transition: linear 0.3s;
 }
 
 .card-list .card-link:hover .card-button {
-  background-color: #0d1e7c;
+  background-color: #000000;
   color: white;
 }
 
@@ -362,11 +358,19 @@ body {
   height: 13px;
   width: 13px;
   opacity: 0.5;
-  background-color: var(--secondary);
+  background-color: black;
 }
 
 .swiper .swiper-pagination-bullet-active {
   opacity: 1;
+}
+
+.swiper .swiper-button-prev {
+  color: #000000;
+}
+
+.swiper .swiper-button-next {
+  color: #000000;
 }
 
 /* Media Queries */
@@ -473,7 +477,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #003bfd34;
+    background-color: var(--primary);
     gap: 2rem;
     padding: 2rem 0;
   }
@@ -488,7 +492,7 @@ body {
     font-weight: 600;
     padding: 1rem 2rem;
     border-radius: 2rem;
-    background-color: var(--primary);
+    background-color: black;
     color: #ffffff;
     box-shadow: black 2px 2px 4px;
     transition: 0.3s linear;
@@ -496,7 +500,7 @@ body {
 
   .cta-bikin a:hover {
     color: rgb(247, 247, 247);
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
 }
 
@@ -522,9 +526,14 @@ body {
     background-color: #f7f7f7;
     width: 30rem;
     height: 100vh;
-    border-left: 1px solid var(--primary);
-    border-bottom: 1px solid var(--primary);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #f7f7f7;
     transition: 0.4s;
+  }
+
+  .navbar .navbar-extra a:hover {
+    display: none;
   }
 
   .navbar .navbar-nav.active {
@@ -532,7 +541,7 @@ body {
   }
 
   .navbar .navbar-nav a {
-    color: rgb(0, 19, 82);
+    color: rgb(0, 0, 0);
     font-size: 2rem;
     font-weight: 400;
     display: block;
@@ -601,11 +610,15 @@ body {
   .cta-bikin {
     margin-top: -10rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #003bfd34;
+    justify-content: center;
+    background-color: var(--primary);
     gap: 2rem;
     padding: 2rem 0;
+  }
+
+  .no-hover:hover {
+    all: unset; /* hapus semua efek hover */
   }
 
   .container-foto {
@@ -625,7 +638,6 @@ body {
     overflow: visible;
     margin-right: 2.7rem;
   }
-
   .foto-wrapper .swiper-button-prev {
     display: none;
   }
@@ -711,7 +723,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #003bfd34;
+    background-color: var(--primary);
     gap: 2rem;
     padding: 2rem 0;
   }
@@ -726,7 +738,7 @@ body {
     font-weight: 600;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
-    background-color: var(--primary);
+    background-color: black;
     color: #ffffff;
     box-shadow: black 2px 2px 3px;
     transition: 0.3s linear;
@@ -734,7 +746,7 @@ body {
 
   .cta-bikin a:hover {
     color: rgb(247, 247, 247);
-    background-color: var(--secondary);
+    background-color: rgb(0, 0, 0, 0.425);
   }
 
   /* Galeri 690px */
