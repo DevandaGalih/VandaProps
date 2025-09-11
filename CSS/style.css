@@ -204,7 +204,7 @@ body {
 }
 
 .about .row .content p span {
-  color: var(--primary);
+  color: #636363;
 }
 
 /* CTA BIKIN SEKARANG */
@@ -420,7 +420,7 @@ body {
 @media (max-width: 1616px) {
   .hero .content {
     line-height: 4rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .hero .content h1 {
@@ -814,7 +814,7 @@ body {
 
   .hero .content h1 {
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin-top: -1rem;
   }
 
   .hero .content h2 {
@@ -882,7 +882,7 @@ body {
 
   .hero .content {
     margin: 0.2rem;
-    margin-top: 7rem;
+    margin-top: 3rem;
   }
 
   .hero .content h1 {
