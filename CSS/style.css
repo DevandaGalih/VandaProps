@@ -885,7 +885,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #003bfd34;
       gap: 2rem;
       padding: 2rem 0;
     }
