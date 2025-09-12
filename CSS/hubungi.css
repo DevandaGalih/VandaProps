@@ -217,10 +217,6 @@ body {
     font-size: 90%;
   }
 
-  #hamburger-menu {
-    display: inline-block;
-  }
-
   .navbar {
     padding: 2rem;
   }
@@ -236,14 +232,6 @@ body {
     border-bottom: 1px solid black;
     border-top: 1px solid #f7f7f7;
     transition: 0.4s;
-  }
-
-  .navbar .navbar-extra a:hover {
-    display: none;
-  }
-
-  .navbar .navbar-nav.active {
-    right: 0;
   }
 
   .navbar .navbar-nav a {
