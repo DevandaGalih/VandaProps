@@ -119,6 +119,7 @@ body {
   border: 10px solid var(--primary);
   border-radius: 2rem;
   height: fit-content;
+  box-shadow: #000000 0px 0px 1rem;
 }
 
 .container-form .title {
@@ -484,6 +485,15 @@ body {
   .container-form {
     scale: 0.8;
   }
+
+  .container-form .fill-form {
+    font-size: 2.5rem;
+  }
+
+  .send-button .button {
+    margin-top: 5rem;
+    scale: 1.5;
+  }
 }
 
 /* Lower Tablet */
@@ -614,24 +624,41 @@ body {
     margin-left: 2rem;
   }
 
-  /* Mobile */
+  .fill-form .filler-name input {
+    font-size: 2.5rem;
+  }
 
-  @media (max-width: 500px) {
-    html {
-      font-size: 70%;
-    }
-    .navbar {
-      padding: 2rem;
-    }
-    .navbar .navbar-nav {
-      width: 35rem;
-    }
+  .fill-form .filler-email input {
+    font-size: 2.5rem;
+  }
 
-    .navbar .navbar-nav #hubungi-kami {
-      border-radius: 30px 0 0 30px;
-      margin-right: 10.2rem;
-      transform: scale(1.2);
-    }
+  .filler-message textarea {
+    font-size: 2.5rem;
+  }
+
+  .send-button .button {
+    scale: 2.5;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 70%;
+  }
+  .navbar {
+    padding: 2rem;
+  }
+  .navbar .navbar-nav {
+    width: 35rem;
+  }
+
+  .navbar .navbar-nav #hubungi-kami {
+    border-radius: 30px 0 0 30px;
+    margin-right: 10.2rem;
+    transform: scale(1.2);
   }
 
   .hero .content h1 {
