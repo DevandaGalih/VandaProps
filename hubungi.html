@@ -26,6 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Judul Web -->
@@ -38,13 +45,73 @@
 
       <div class="navbar-extra">
         <a href="index.html" id="backward-button"
-          ><i data-feather="arrow-left"></i
+          ><i data-feather="home"></i
         ></a>
       </div>
     </nav>
     <!-- Nav End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Hero start -->
+    <div class="background-form">
+      <div class="container-form">
+        <div class="title">
+          <h1>CONTACT FORM</h1>
+        </div>
+        <div class="fill-form">
+          <form onsubmit="sendMessage()">
+            <div class="filler-name">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Your Name" required />
+            </div>
+            <br />
+            <div class="filler-email">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <br />
+            <div class="filler-message">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="4"
+                placeholder="Message...."
+                required
+              ></textarea>
+            </div>
+            <div class="send-button">
+              <button class="button" type="Submit">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Hero end -->
+
+    <!-- Footer start -->
+    <footer id="footer">
+      <div class="footer-cont">
+        <div class="social-icons">
+          <a href="https://wa.me/6288996987264" id="whatsapp"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a href="https://www.instagram.com/unsearch.404/" id="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright &copy;2025 Designed by <a href="index.html">DEVANDA</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
 
     <!-- Feather Icons -->
 

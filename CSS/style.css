@@ -17,7 +17,6 @@ body {
   font-family: "Poppins", "sans-serif";
   background-color: rgb(20, 20, 20);
   color: rgb(0, 0, 0);
-  height: 1000vh;
 }
 /* Navbar */
 
@@ -322,6 +321,7 @@ body {
 .card-list .card-link .badge {
   color: var(--primary);
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 .card-list .card-link p {
@@ -385,6 +385,50 @@ body {
 .swiper .swiper-button-next:hover {
   color: #636363;
   transform: scale(1.1);
+}
+
+/* Footer */
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  bottom: 0;
+}
+
+#footer .social-icons {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.social-icons a {
+  font-size: 1.9rem;
+  color: #ececec;
+  background-color: var(--third);
+  padding: 5px 7.5px 5px 7.5px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: var(--secondary);
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+  cursor: default;
+}
+
+.footer-bottom .copyright a {
+  color: rgb(119, 119, 119);
 }
 
 /* Media Queries */
