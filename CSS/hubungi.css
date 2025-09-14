@@ -115,8 +115,8 @@ body {
   margin-top: 12rem;
   display: flex;
   flex-direction: column;
-  background-color: rgba(56, 56, 56, 0.959);
-  border: 10px solid var(--primary);
+  background-color: rgba(56, 56, 56, 0.966);
+  border: 5px solid var(--primary);
   border-radius: 2rem;
   height: fit-content;
   box-shadow: #000000 0px 0px 1rem;
